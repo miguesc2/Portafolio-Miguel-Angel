@@ -38,6 +38,12 @@
   }
 }
 
+.imgInicio > img {
+  width: 80%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
 .coverImgs {
   object-fit: cover;
   max-height: 350px;
