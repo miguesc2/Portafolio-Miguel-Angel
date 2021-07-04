@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
 :root {
   --bs-blue: #1D809F;
   --bs-indigo: #6610f2;
@@ -39,37 +41,49 @@
   }
 }
 * {
-font-family: "Akaya Kanadaka", sans-serif, 'Muli';
+font-family: "Yomogi", "Akaya Kanadaka", 'Muli', sans-serif;
 }
 
 
 .imgInicio > img {
-  width: 70%;
+  width: 100%;
   max-height: 400px;
   max-width: 400px;
 }
 
-nav{
-  transition-duration: .4s;
+#navegador{
+  transition-duration: .3s;
 }
-nav:hover {
+#navegador:hover {
   background: #f8f9fa !important;
   color: black !important;
   border-bottom: #7628a1 2px solid;
-  transition-duration: .4s;
+  transition-duration: .3s;
 }
 
 .headerFntSize li a {
   font-size: 25px;
-  border-bottom: #9f6b1d 2px solid;
+  border-bottom: #7628a1 2px solid;
   transition-duration: .2s;
 }
 .headerFntSize li a:hover {
   font-size: 30px;
   border-bottom: #7628a1 3px solid;
-  padding-bottom: 12px;
+  border-top: #7628a1 3px solid;
+  padding-bottom: 8px;
+  padding-top: 8px;
   transition-duration: .2s;
   color: black !important;
+}
+
+.btnCv {
+  border: black 1px solid !important;
+  font-weight: bold !important;
+}
+.btnCv:hover {
+  background-color: #7628a1 !important;
+  border: black 1px solid !important;
+  color: white !important;
 }
 
 .imgCertificate {
@@ -164,7 +178,8 @@ nav:hover {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #7628a1;
+  font-weight: bold;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -193,7 +208,6 @@ nav:hover {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -214,8 +228,12 @@ nav:hover {
   text-transform: uppercase;
 }
 
+.callout-1 {
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.7) 100%, rgba(255, 255, 255, 0.1) 100%), url("https://fondosmil.com/fondo/52686.jpg");
+}
+
 .callout {
-  padding: 10rem 0;
+  padding: 8rem 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
   background-position: center center;
   background-repeat: no-repeat;
