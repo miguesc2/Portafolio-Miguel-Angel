@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', event => {
   const sidebarWrapper = document.getElementById('sidebar-wrapper');
   let scrollToTopVisible = false;
-  // Closes the sidebar menu
+  // Cierra menú de la barra lateral
     const menuToggle = document.body.querySelector('.menu-toggle');
     menuToggle.addEventListener('click', event => {
         event.preventDefault();
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
         menuToggle.classList.toggle('active');
     })
 
-  // Closes responsive menu when a scroll trigger link is clicked
+  // Cierra el menú cuando se da clic en un enlace de activación de desplazamiento
     var scrollTriggerList = [].slice.call(document.querySelectorAll('#sidebar-wrapper .js-scroll-trigger'));
     scrollTriggerList.map(scrollTrigger => {
       scrollTrigger.addEventListener('click', () => {
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', event => {
       }
     }
 
-  // Scroll to top button appear
+  // Desplazarse hasta el botón superior aparece
     document.addEventListener('scroll', () => {
       const scrollToTop = document.body.querySelector('.scroll-to-top');
       if (document.documentElement.scrollTop > 100) {
