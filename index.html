@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /> <!-- Google fonts-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
+  
   <body id="page-top">
     <a class="menu-toggle rounded d-block d-md-none" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -24,8 +25,9 @@
       </ul>
     </nav>
 
-    <nav id="navegador" class="bg-dark text-light d-none d-md-block col-12 pt-3 pb-1">
+    <nav id="navegador" class="bg-dark text-white d-none d-md-block col-12 pt-3 pb-1">
         <ul class="d-flex justify-content-around headerFntSize">
+          <!-- <li><a class="text-reset" href="#about">Inicio</a></li> -->
           <li><a class="text-reset" href="#services">Tecnologías</a></li>
           <li><a class="text-reset" href="#aboutMe">Sobre Mí</a></li>
           <li><a class="text-reset" href="#portfolio">Portafolio</a></li>
@@ -42,7 +44,8 @@
             <h5 class="d-inline display-6"> Miguel Ángel Melo</h5>
             <h1 class="display-1 mb-0">FrontEnd</h1>
             <h1 class="display-2 mt-0">Developer</h1>
-            <button class="btn btn-lg btnCv"><a href="/" class="text-reset">DESCARGA CV</a></button>
+            <button class="btn btn-lg btnCv"><a href="https://drive.google.com/file/d/1U_w8ocwBKWo_KkL966f5n3Dt47aJ4M0_/view?usp=sharing" class="text-reset" target="_blank">Descargar Curriculum</a></button>
+            <button class="btn btn-lg btnCv"><a href="https://www.canva.com/design/DAEZbdatTHA/mRdnMsA2GaqHTP8a-qmRpw/view?utm_content=DAEZbdatTHA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="text-reset" target="_blank">Ver CV online</a></button>
           </div>
           <div class="col-lg-5 text-center">
             <a href="#services" class="imgInicio">
@@ -56,29 +59,29 @@
     <section class="content-section bg-dark text-white text-center" id="services">
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading">
-          <h2 class="mb-5">Tecnologías</h2>
+          <h2 class="mb-5" id="imgAnimates">Tecnologías</h2>
         </div>
-        <div class="row gx-4 gx-lg-5">
+        <div class="row gx-4 gx-lg-5 imgAnimate">
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/sKyLNXw/physics.png" class="w-50" alt="ReactJS">
+            <img src="https://i.ibb.co/WxfmL4x/react.png" class="w-50" alt="ReactJS">
             <h4><strong>React JS</strong></h4>
           </div>
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/f2N4Vvb/javascript.png" class="w-50" alt="JavaScript">
+            <img src="https://i.ibb.co/sbTG2Zv/js.png" class="w-50" alt="JavaScript">
             <h4><strong>JavaScript</strong></h4>
           </div>
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/T4z45rD/icons8-css3-480.png" class="w-50" alt="Css">
-            <h4><strong>Css</strong></h4>
+            <img src="https://i.ibb.co/mzq22XJ/typescript.png" class="w-50" alt="Redux">
+            <h4><strong>TypeScript</strong></h4>
           </div>
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/ZHs57bW/html.png" class="w-50" alt="Html">
-            <h4><strong>Html</strong></h4>
+            <img src="https://i.ibb.co/0j9TSCR/icons8-redux-480.png" class="w-50" alt="Redux">
+            <h4><strong>Redux</strong></h4>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+        <div class="row gx-4 gx-lg-5 mt-5 imgAnimate">
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/tHL9T89/github.png" class="w-50" alt="Git">
+            <img src="https://i.ibb.co/c2YFVDR/git.png" class="w-50" alt="Git">
             <h4><strong>Git</strong></h4>
           </div>
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
@@ -86,8 +89,12 @@
             <h4><strong>Bootstrap</strong></h4>
           </div>                    
           <div class="col-lg-3 col-6 mb-5 mb-lg-0">
-            <img src="https://i.ibb.co/0j9TSCR/icons8-redux-480.png" class="w-50" alt="Redux">
-            <h4><strong>Redux</strong></h4>
+            <img src="https://i.ibb.co/QDR6j1b/css.png" class="w-50" alt="Css">
+            <h4><strong>Css</strong></h4>
+          </div>
+          <div class="col-lg-3 col-6 mb-5 mb-lg-0">
+            <img src="https://i.ibb.co/vhLL0dx/html.png" class="w-50" alt="Html">
+            <h4><strong>Html</strong></h4>
           </div>
         </div>
       </div>
@@ -96,7 +103,7 @@
     <section class="callout" id="aboutMe">
       <div class="container px-4 px-lg-5 text-center">
         <h2 class="mx-auto mb-5">¡Sobre Mí!</h2>
-        <h4>Estudiante autodidacta Front-end, soy de Colombia, uso las tecnologias anteriormente vistas, y para hacer responsive uso Bootstrap; Estudié en Platzi algunos meses para afianzar conocimientos, llevo cierta experiencia con Redux e hice algunos proyectos, y cómo agregado tengo Inglés Basico.</h4>
+        <h4>Desarrollador Autodidacta con cerca de dos años de experiencia FrontEnd, uso las tecnologias anteriormente vistas; Estudié en Platzi algunos meses para afianzar conocimientos, llevo cierta experiencia con Redux e hice algunos proyectos que explico brevemente en mi curriculum, mi interes es poder colaborar, crecer con una buena compañía, dar mis conocimientos, trabajar en equipo, analizar, y adaptarme.</h4>
       </div>
     </section>
     
@@ -104,15 +111,38 @@
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portafolio</h3>
-          <h2 class="mb-5">Proyectos Recientes</h2>
+          <h2 class="mb-5">Proyectos</h2>
         </div>
+        
         <div class="row gx-0">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://60fcd16a131ab30d7676c21f--gallant-ritchie-4f1330.netlify.app/" target="blank">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">ECOMMERCE</div>
+                  <p class="mb-0">Página de Compras, tiene Login, Registro, Agregar al Carrito, Pasarela de Pago, Precio total, etc...</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="https://i.ibb.co/mDJ5M6d/ecommerce.png" alt="..." />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://miguesc2.github.io/twitter-app/build/" target="blank">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Clon de Twitter (En progreso...)</div>
+                  <p class="mb-0">Ahora mismo puede Registrarse o hacer Login, ver Posteos y Postear, y ver su Perfíl</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="https://i.ibb.co/3YkDX2H/twitter-Img.png" alt="..." />
+            </a>
+          </div>
           <div class="col-lg-6">
             <a class="portfolio-item" href="https://miguesc2.github.io/platziVideo/build/" target="blank">
               <div class="caption">
                 <div class="caption-content">
                   <div class="h2">PLATZI VIDEO</div>
-                  <p class="mb-0">¡Página que reproduce videos, los puede agregar a una lista propia o removerla, inicio de sesión o registro, hecha con Redux y React!</p>
+                  <p class="mb-0">¡Página tipo Plantilla que Reproduce Videos, Puede agregarlos o removerlos de su Lista, hecha con Redux y React!</p>
                 </div>
               </div>
               <img class="img-fluid" src="https://i.ibb.co/mJmT8bc/platzi-Video.png" alt="..." />
@@ -122,33 +152,33 @@
             <a class="portfolio-item" href="https://miguesc2.github.io/clone-main-view-cuevana/build/" target="blank">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">CLON CUEVANA VISTA PRINCIPAL</div>
-                  <p class="mb-0">¡Inspirada en cuevana, hecha como proyecto para responsive, con bootstrap, css y react! (Sin interacciones/funcionalidad)</p>
+                  <div class="h2">DISEÑO RESPONSIVE VISTA PRINCIPAL CUEVANA (la página de películas) </div>
+                  <p class="mb-0">Página Estática, Hecha para probar Habilidades de Responsive, con Bootstrap, CSS y React.</p>
                 </div>
               </div>
               <img class="img-fluid" src="https://i.ibb.co/6r8Dx22/cuevana-Clon.png" alt="..." />
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://60fcd16a131ab30d7676c21f--gallant-ritchie-4f1330.netlify.app/" target="blank">
+            <a class="portfolio-item" href="https://miguesc2.github.io/Social-media-control-panel-with-dark-mode/index.html" target="blank">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">ECOMMERCE</div>
-                  <p class="mb-0">Login, registro, agregado al carrito, pasarela de pago, precio total de compra, etc</p>
+                  <div class="h2">Página Estática Modo Oscuro + Responsive</div>
+                  <p class="mb-0">Una plantilla dónde pruebo como poder cambiar entre modo oscuro con un interruptor.</p>
                 </div>
               </div>
-              <img class="img-fluid" src="https://i.ibb.co/mDJ5M6d/ecommerce.png" alt="..." />
+              <img class="img-fluid" src="https://i.ibb.co/hZ1PXx4/page-With-Dark-Mode.png" alt="..." />
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://miguesc2.github.io/Huddle-landing-page-with-curved-sections/" target="blank">
+            <a class="portfolio-item" href="https://611738967ace9300071c7864--competent-jones-47c5f0.netlify.app/" target="blank">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">STATIC PAGE</div>
-                  <p class="mb-0">Pagina responsive</p>
+                  <div class="h2">Generar Perfíles Aleatorios</div>
+                  <p class="mb-0">Cada que recarga la página, aparecerá un nuevo personaje, los datos son consumidos de un API y la app subida a Netlify</p>
                 </div>
               </div>
-              <img class="img-fluid" src="https://i.ibb.co/YPbzSpK/Huddle-landing-page-with-curved-sections.png" alt="..." />
+              <img class="img-fluid" src="https://i.ibb.co/0sVRvcy/random-User.png" alt="..." />
             </a>
           </div>
         </div>
@@ -159,29 +189,32 @@
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
           <h2 class="mb-5 text-dark">Certificados</h2>
-          <h3 class="mb-5 text-dark">Manten Click izquierdo presionado sobre el item que quieres ver.</h3>
+          <h3 class="mb-5 text-dark">Mantenga Click Izquierdo presionado sobre el Certificado que quiera Ver.</h3>
         </div>
         <div class="row gx-4 gx-lg-5 d-flex justify-content-around contDiploma">
           <div class="col-lg-3 col-md-6 mb-5">
             <img src="https://i.ibb.co/4ZhJ64k/Js-Profesional.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
-            <img src="https://i.ibb.co/T4t7ptj/fundamentos-JS.png" class="w-100 imgCertificate" alt="Diploma">
+            <img src="https://i.ibb.co/9rpjNkS/react-Proo.jpg" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
             <img src="https://i.ibb.co/Mf588Nt/React-Js.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
-            <img src="https://i.ibb.co/LgDTnKM/Reactrouter-Redux.png" class="w-100 imgCertificate" alt="Diploma">
+            <img src="https://i.ibb.co/KbkWddr/ReactJs.png" class="w-100 imgCertificate" alt="Diploma">
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <img src="https://i.ibb.co/T4t7ptj/fundamentos-JS.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
             <img src="https://i.ibb.co/Rj50fhF/Webpack.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
-            <img src="https://i.ibb.co/2Sz06Yh/gitygithub.png" class="w-100 imgCertificate" alt="Diploma">
+            <img src="https://i.ibb.co/LgDTnKM/Reactrouter-Redux.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
           <div class="col-lg-3 col-md-6 mb-5">
-            <img src="https://i.ibb.co/KbkWddr/ReactJs.png" class="w-100 imgCertificate" alt="Diploma">
+            <img src="https://i.ibb.co/2Sz06Yh/gitygithub.png" class="w-100 imgCertificate" alt="Diploma">
           </div>
         </div>
       </div>
@@ -192,18 +225,20 @@
         <h1 class="mb-4">Contacto</h1>
         <div class="container px-4 px-lg-5">
           <ul class="list-inline mb-5">
+            
             <li class="list-inline-item">
               <a class="social-link rounded-circle text-white mr-3" target="blank" href="https://www.linkedin.com/in/angel-escobar-melo-939483216/"><i class="icon-social-linkedin"></i></a>
               <a href="https://www.linkedin.com/in/angel-escobar-melo-939483216/" target="blank" class="text-reset">LINKEDIN</a>
             </li>
             <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" target="blank" href="mailto:zaggel2002@gmail.com"><i class="icon-envelope"></i></a>
-              <a href="mailto:zaggel2002@gmail.com" target="blank" class="text-reset">EMAIL</a>
+              <a class="social-link rounded-circle text-white mr-3" target="blank" href="mailto:angelmeloescobar1010@gmail.com"><i class="icon-envelope"></i></a>
+              <a href="mailto:angelmeloescobar1010@gmail.com" target="blank" class="text-reset">EMAIL</a>
             </li>
             <li class="list-inline-item">
               <a class="social-link rounded-circle text-white" target="blank" href="https://github.com/miguesc2"><i class="icon-social-github"></i></a>
               <a href="https://github.com/miguesc2" target="blank" class="text-reset">GITHUB</a>
             </li>
+
           </ul>
         </div>
       </div>

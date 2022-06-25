@@ -1,16 +1,15 @@
 window.addEventListener('DOMContentLoaded', event => {
   const sidebarWrapper = document.getElementById('sidebar-wrapper');
   let scrollToTopVisible = false;
-  // Cierra menú de la barra lateral
-    const menuToggle = document.body.querySelector('.menu-toggle');
-    menuToggle.addEventListener('click', event => {
-        event.preventDefault();
-        sidebarWrapper.classList.toggle('active');
-        _toggleMenuIcon();
-        menuToggle.classList.toggle('active');
-    })
+  
+  const menuToggle = document.body.querySelector('.menu-toggle');
+  menuToggle.addEventListener('click', event => {
+      event.preventDefault();
+      sidebarWrapper.classList.toggle('active');
+      _toggleMenuIcon();
+      menuToggle.classList.toggle('active');
+  })
 
-  // Cierra el menú cuando se da clic en un enlace de activación de desplazamiento
     var scrollTriggerList = [].slice.call(document.querySelectorAll('#sidebar-wrapper .js-scroll-trigger'));
     scrollTriggerList.map(scrollTrigger => {
       scrollTrigger.addEventListener('click', () => {
@@ -48,6 +47,20 @@ window.addEventListener('DOMContentLoaded', event => {
         }
       }
     })
+})
+
+window.addEventListener('scroll', function() {
+  let imagenes = document.querySelectorAll('.imgAnimate')  
+  let imagen = document.getElementById('imgAnimates')  
+  let posicionObj = imagen.getBoundingClientRect().top
+  let tamanoDePantalla = window.innerHeight / 2.5
+  if ( posicionObj < tamanoDePantalla ) {
+    imagenes.forEach(image => {
+      image.classList.remove("imgAnimate")
+      image.style.animation = 'mover 1s ease-out'
+    })
+  }
+  
 })
 
 function fadeOut(el) {
