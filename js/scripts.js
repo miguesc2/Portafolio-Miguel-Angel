@@ -54,6 +54,7 @@ window.addEventListener('scroll', function() {
   let imagen = document.getElementById('imgAnimates')  
   let posicionObj = imagen.getBoundingClientRect().top
   let tamanoDePantalla = window.innerHeight / 2.5
+
   if ( posicionObj < tamanoDePantalla ) {
     imagenes.forEach(image => {
       image.classList.remove("imgAnimate")
